@@ -9,7 +9,8 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, 'src')
+    contentBase: path.join(__dirname, 'src'),
+    historyApiFallback: true,
   },
   module: {
     rules: [
